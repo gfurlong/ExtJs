@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <title>Ext3.4</title>
+
+        <!-- ExtJs library here -->
+        <link rel="stylesheet" type="text/css" href="./extjs-3.4.0/resources/css/ext-all.css">
+        <script type="text/javascript" src="./extjs-3.4.0/adapter/ext/ext-base.js"></script>
+        <script type="text/javascript" src="./extjs-3.4.0/ext-all.js"></script>
+
+        <style type="text/css">
+            html, body {
+                font: normal 12px verdana;
+                margin: 0;
+                padding: 0;
+                border: 0 none;
+            }
+
+            #header {
+                background-color: #7F99BE;
+            }
+            #header h1 {
+                font-size: 16px;
+                color: #fff;
+                font-weight: normal;
+                padding: 5px 10px;
+            }
+
+            li {
+                margin: 0 0 3px 0;                
+            }
+
+            .demo-button {
+                width: 160px;
+                height: 32px;
+            }
+        </style>
+    </head>
+
+<body>
+    <div id="header" style="height: 30px; left: 0px; top: 0px; width: 842px;">
+        <h1>My ExtJS Demos</h1>
+    </div>
+
+    <div id="content">
+    </div>
+
+    <div id="panels" style="display: none">
+        <div id="panelMessageBox">
+            <ul>
+                <li><button class="demo-button" onclick="error()">Error</button></li>
+                <li><button class="demo-button" onclick="prompt()">Prompt</button></li>
+                <li><button class="demo-button" onclick="multilinePrompt()">Multiline Prompt</button></li>
+                <li><button class="demo-button" onclick="confirm()">Confirm</button></li>
+                <li><button class="demo-button" onclick="createAjaxWindow()">Create AJAX Window</button></li>
+            </ul>
+        </div>
+
+        <div id="panelAnimations">
+            <ul>
+                <li><button class="demo-button" onclick="error()">Error</button></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Your main entry point file here -->
+    <script src="main.js"></script>
+
+    <!-- Set up the main page layout using ExtJs panels -->
+    <script src="layout.js"></script>
+</body>
+</html>
